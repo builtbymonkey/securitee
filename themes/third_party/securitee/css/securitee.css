@@ -1,0 +1,67 @@
+.securitee_nav {
+	//padding:			0 25px;
+	float: left;
+}
+
+.securitee_nav span.button {
+	float:				  left;
+	margin-bottom:  10px;
+    margin-right: 6px;
+}
+ .securitee_nav .nav_button {
+	font-weight:	normal;
+	background:		#d0d9e1;
+	color:			#34424b;
+}
+
+.securitee_nav span.button a.nav_button{
+	color: #34424b;
+    font: 12px/12px Arial, 'Hevlvetica Neue', sans-serif;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+.securitee_nav span.button a.nav_button:hover {
+	background-color:#e11842;
+	text-decoration:none;
+	color: #fff;
+}
+.securitee_nav span.button a.current {
+	background-color:#e11842;
+	text-decoration:none;
+	color: #fff;
+}
+
+
+#m62_system_error
+{
+	border:1px solid #bf0012;
+	background:#ffbc9f url(../images/securitee_logo.png) no-repeat right top;	
+	padding:15px 45px 15px 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	color:#18362D;
+	font-size:18px;
+	margin:0 0 10px 0;
+}
+#m62_system_error a{
+	color:#a10a0a;
+	font-size:14px;
+}
+
+.securitee_scan_warning_notice { 
+	background-color: #fcd12b !important;
+	width: 62px;
+	height: 35px;
+	color: #88870c;
+	font-weight: bold;
+	text-align:center;
+}
+
+.securitee_scan_pass_notice {
+	
+	background-color: #436310 !important;
+	width: 62px;
+	height: 35px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-align:center;	
+}
