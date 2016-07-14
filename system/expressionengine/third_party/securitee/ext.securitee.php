@@ -31,7 +31,7 @@ class Securitee_ext
 
 	public $name = 'Securit:ee';
 	
-	public $version = '1.4.2';
+	public $version = '1.5';
 	
 	public $description	= 'Securit:ee is a security suite for ExpressionEngine. Includes a file monitor, Control Panel and Client Side IP Locker, Control Panel Login Alert and a Security scanner.';
 	
@@ -250,8 +250,8 @@ class Securitee_ext
 			{
 				$ignore_controllers = array('myaccount', 'javascript', 'login', 'css');
 				$ignore_models = array('update_username_password', 'username_password');
-				$model = $this->EE->input->get('M', FALSE);
-				$controller = $this->EE->input->get('C', FALSE);
+				$model = ee()->router->fetch_method();
+				$controller = ee()->router->fetch_class();
 				
 				//we need to make sure we're not forcing a looping redirect so check certain pages are bypassed from checking
 				$check_password = TRUE;
@@ -270,7 +270,7 @@ class Securitee_ext
 					{
 						//send member to change password in CP
 						$session->set_flashdata('message_failure', $this->EE->lang->line('password_expired'));
-						$url = $this->EE->config->config['cp_url'].'?S='.$this->EE->input->get_post('S', '0').'&D=cp&C=myaccount&M=username_password';
+						$url = SELF.'?/cp/myaccount/username_password&S='.$session->sdata['fingerprint'];
 						redirect($url);
 						exit;	
 					}				

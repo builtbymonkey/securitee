@@ -7,13 +7,13 @@
  * @author		Eric Lamb
  * @copyright	Copyright (c) 2014, mithra62, Eric Lamb.
  * @link		http://mithra62.com/projects/view/securit-ee/
- * @version		1.4
+ * @version		1.5
  * @filesource 	./system/expressionengine/third_party/securitee/
  */
 
 $config['name'] = 'Securit:ee';
 $config['class_name'] = 'Securitee';
-$config['version'] = '1.4.3';
+$config['version'] = '1.5';
 //$config['nsm_addon_updater']['versions_xml'] = 'http://mithra62.com/securitee.xml';
 
 $config['settings_table'] = 'securitee_settings';
